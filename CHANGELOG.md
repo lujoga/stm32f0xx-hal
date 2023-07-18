@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+### Added
+
+- PWM capability for TIM2
+
 ## [v0.18.0] - 2021-11-14
 
 ### Changed

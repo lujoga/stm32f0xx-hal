@@ -587,6 +587,23 @@ pwm_4_channels!(
     TIM3: (tim3, tim3en, tim3rst, apb1enr, apb1rstr),
 );
 
+#[cfg(any(
+    feature = "stm32f031",
+    feature = "stm32f038",
+    feature = "stm32f042",
+    feature = "stm32f048",
+    feature = "stm32f051",
+    feature = "stm32f058",
+    feature = "stm32f071",
+    feature = "stm32f072",
+    feature = "stm32f078",
+    feature = "stm32f091",
+    feature = "stm32f098",
+))]
+pwm_4_channels!(
+    TIM2: (tim2, tim2en, tim2rst, apb1enr, apb1rstr),
+);
+
 pwm_1_channel!(TIM14: (tim14, tim14en, tim14rst, apb1enr, apb1rstr),);
 
 pwm_1_channel_with_complementary_outputs!(
